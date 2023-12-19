@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { PortalComponent } from './portal/portal.component';
+import { PoliciesComponent } from './policies/policies.component';
 
 //import awsconfig from './../aws-exports';
 //Amplify.configure(awsconfig);
@@ -15,7 +16,8 @@ import { PortalComponent } from './portal/portal.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PortalComponent
+    PortalComponent,
+    PoliciesComponent
   ],
   imports: [
     BrowserModule,
