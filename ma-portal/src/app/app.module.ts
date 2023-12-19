@@ -10,14 +10,16 @@ import { AppComponent } from './app.component';
 import { PortalComponent } from './portal/portal.component';
 import { PoliciesComponent } from './policies/policies.component';
 
-//import awsconfig from './../aws-exports';
-//Amplify.configure(awsconfig);
+import amplifyconfig from '../amplifyconfiguration.json';
+import { HomeComponent } from './home/home.component';
+Amplify.configure(amplifyconfig);
 
 @NgModule({
   declarations: [
     AppComponent,
     PortalComponent,
-    PoliciesComponent
+    PoliciesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
