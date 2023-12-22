@@ -48,7 +48,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-maportalbeta-staging-133821-deployment/amplify-cfn-templates/auth/maportalbeta-cloudformation-template.json",
         "logicalId": "authmaportalbeta"
       },
-      "lastPushTimeStamp": "2023-12-19T12:41:43.763Z",
+      "lastPushTimeStamp": "2023-12-20T11:55:52.909Z",
       "output": {
         "UserPoolId": "ap-southeast-2_GWpJ4Be3K",
         "AppClientIDWeb": "607iggl3eolh76115gj5klm18j",
@@ -59,6 +59,13 @@
         "UserPoolName": "maportalbeta"
       },
       "lastPushDirHash": "V8i1/HFw2H6adb+crje0oGS9Vk0="
+    }
+  },
+  "function": {
+    "maportalFunctionIONAPI": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   }
 }
