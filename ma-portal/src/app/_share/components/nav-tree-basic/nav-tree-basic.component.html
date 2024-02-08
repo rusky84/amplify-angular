@@ -1,0 +1,11 @@
+<ng-container *ngIf="dataSource != undefined">
+  <mat-nav-list>
+    <mat-list-item matListIcon *ngFor="let item of dataSource" 
+        (click)="menuItemSelected(item.routerLink)">
+      <mat-icon>{{ item.icon }}</mat-icon>
+      &nbsp;
+      {{ item.name }}
+    </mat-list-item>
+  </mat-nav-list>
+</ng-container>
+

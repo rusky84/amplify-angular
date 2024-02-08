@@ -1,0 +1,22 @@
+<ng-container *ngIf="dataSource != undefined">
+  <mat-accordion *ngFor="let item of dataSource">
+    <mat-expansion-panel >
+      <mat-expansion-panel-header class="left-aligned-panel-header">
+        <mat-list-item>
+          {{item.name}}
+        </mat-list-item>
+        <mat-icon style="margin: 0 7px 0 0;">
+          {{ item.type }}
+        </mat-icon>
+      </mat-expansion-panel-header>
+      <mat-nav-list *ngIf="item.children != null" >
+        <mat-list-item *ngFor="let child of item.children" [routerLink]="[{ outlets: {   waRouter:[ child.routerLink ] }}]" >
+          <mat-icon style="margin: 0 3px 0 0;">
+            {{ child.type }}
+          </mat-icon>
+          {{ child.name }}
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+</ng-container>

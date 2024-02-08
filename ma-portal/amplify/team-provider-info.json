@@ -1,19 +1,20 @@
 {
   "staging": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-maportalbeta-staging-133821-authRole",
-      "UnauthRoleArn": "arn:aws:iam::452296834910:role/amplify-maportalbeta-staging-133821-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::452296834910:role/amplify-maportalbeta-staging-133821-authRole",
+      "AuthRoleName": "amplify-map-staging-234758-authRole",
+      "UnauthRoleArn": "arn:aws:iam::452296834910:role/amplify-map-staging-234758-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::452296834910:role/amplify-map-staging-234758-authRole",
       "Region": "ap-southeast-2",
-      "DeploymentBucketName": "amplify-maportalbeta-staging-133821-deployment",
-      "UnauthRoleName": "amplify-maportalbeta-staging-133821-unauthRole",
-      "StackName": "amplify-maportalbeta-staging-133821",
-      "StackId": "arn:aws:cloudformation:ap-southeast-2:452296834910:stack/amplify-maportalbeta-staging-133821/b5f1d4f0-9daa-11ee-bede-06b2c7db5b91",
-      "AmplifyAppId": "dfzmkae7cskb5"
+      "DeploymentBucketName": "amplify-map-staging-234758-deployment",
+      "UnauthRoleName": "amplify-map-staging-234758-unauthRole",
+      "StackName": "amplify-map-staging-234758",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:452296834910:stack/amplify-map-staging-234758/6b0aa6a0-f5d6-11ed-9f32-0673e2c045aa",
+      "AmplifyAppId": "d3czzbyylsf08c"
     },
     "categories": {
       "auth": {
-        "maportalbeta": {}
+        "maportalbeta": {},
+        "ma345e78b53": {}
       }
     }
   }

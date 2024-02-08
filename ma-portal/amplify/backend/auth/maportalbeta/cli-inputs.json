@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "testAuthIdentityPool",
+    "identityPoolName": "[***]tityPool",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "maportc1cb0484",
-    "userPoolName": "maportalbeta",
+    "resourceNameTruncated": "[***]cb0484",
+    "userPoolName": "[***]lbeta",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -33,12 +33,12 @@
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [],
     "userpoolClientReadAttributes": [],
-    "userpoolClientLambdaRole": "maportc1cb0484_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "maport[***]0484_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
     "sharedId": "c1cb0484",
-    "resourceName": "maportalbeta",
+    "resourceName": "[***]lbeta",
     "authSelections": "identityPoolAndUserPool",
-    "serviceName": "Cognito",
+    "serviceName": "[***]ito",
     "usernameAttributes": [
       "email"
     ],

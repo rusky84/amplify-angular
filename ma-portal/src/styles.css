@@ -1,3 +1,5 @@
+@import '../node_modules/@syncfusion/ej2-bootstrap-theme/styles/bootstrap.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/material.css';
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap/dist/css/bootstrap.css";
 
@@ -6,5 +8,16 @@ html{
    height: 100%;
 }
 body{
-   
+
 }
+
+
+.txt-color-1{
+  color: rgb(213, 241, 245);
+}
+.bg-color-1{
+  background-color: rgb(213, 241, 245);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

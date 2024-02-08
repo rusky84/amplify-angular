@@ -1,0 +1,21 @@
+<mat-toolbar [color]="'accent'" style="height: 35px; margin-left: 0; background-color: black;">
+
+  <button type="button" mat-icon-button (click)="menuButtonToggle()">
+    <mat-icon aria-label="Side nav toggle icon" style="margin-bottom: 2px;">apps</mat-icon>
+  </button>
+
+  <div style="padding: 0 0 2px 0;">
+    <img height="18" src="../../../assets/img/mobileActionTextBannerIcon.png" alt="MA" />
+  </div>
+
+  <span style="flex: 1 1;"></span>
+
+  <button type="button" mat-icon-button (click)="signOut()">
+    <mat-icon>logout</mat-icon>
+  </button>
+
+  <button type="button" mat-icon-button >
+    <mat-icon>person</mat-icon>
+  </button>
+
+</mat-toolbar>

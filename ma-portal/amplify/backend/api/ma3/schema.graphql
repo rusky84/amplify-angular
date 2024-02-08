@@ -1,0 +1,38 @@
+enum Status {
+  PRELIM
+  ACTIVE
+  HOLD
+  CLOSED
+  DELETED
+}
+
+type Environment @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  description: String
+  date: AWSDateTime
+  status: Status
+  customer_id: ID! @index(name: "byCustomer")
+  configuration_id: String
+  Configurations: [Configuration] @hasMany(indexName: "byEnvironment", fields: ["id"])
+}
+
+type Configuration @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  description: String
+  date: AWSDateTime
+  status: Status
+  environmentID: ID! @index(name: "byEnvironment")
+}
+
+type Customer @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  description: String!
+  date: AWSDateTime!
+  status: Status!
+  environment_id: String
+  Environments: [Environment] @hasMany(indexName: "byCustomer", fields: ["id"])
+}
+ 

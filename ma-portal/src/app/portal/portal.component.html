@@ -1,68 +1,12 @@
-<amplify-authenticator>
-   
-   <ng-template amplifySlot="header">
-      <div style="padding: var(--amplify-space-small); text-align: center">
-         <h2>
-            Portal Login
-         </h2>
-      </div>
-   </ng-template>
-
-   <ng-template amplifySlot="footer">
-   </ng-template>
-
-   <ng-template amplifySlot="sign-in-header">
-   </ng-template>
- 
-   <ng-template amplifySlot="confirm-sign-up-header">
-   </ng-template>
-
-   <ng-template amplifySlot="sign-up-header">
-   </ng-template>
- 
-    <ng-template
-      amplifySlot="authenticated"
-      let-user="user"
-      let-signOut="signOut" >
-      <nav class="navbar navbar-expand-sm ">
-         <div class="container-fluid">
-            <a class="navbar" style="padding:2px;" >
-               <img src="/assets/nhgWebBrand.png" alt="" width="160" class="m-0 p-0" >
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-               <ul class="navbar-nav me-auto mb-2 mb-md-0">
-               <!--
-                     li class="nav-item" [hidden]="!showAgreementLineList" style="padding-right: 10px;">
-                     <a class="nav-link"  #AgreementLineListLink routerLink="agreement-line-list" (click)="AgreementLineListLink.click()">
-                        Agreement
-                     </a>
-                  </li>
-                  <li class="nav-item" [hidden]="!showPOLineList" style="padding-right: 10px;">
-                     <a class="nav-link" #POLineListLink routerLink="po-line-list" (click)="POLineListLink.click()">
-                        PO Line List
-                     </a>
-                  </li
-               -->
-               </ul>
-               <div class="d-flex">
-                  <ul class="navbar-nav me-auto mb-2 mb-md-0" data-toggle="tooltip" data-placement="bottom" title="Logout">
-                        <a class="nav-link" 
-                           type="submit" 
-                           (click)="signOut()">
-                           <div class="m-0 p-0">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="33" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 10 24">
-                                 <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
-                                 <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-                               </svg>
-                           </div>
-                        </a>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </nav>
-  </ng-template>
-</amplify-authenticator>
+<app-title Title="Portal" Lead="Mobile Action supporting functions"></app-title>
+<div class="container">
+  <div class="row">
+    <div class="col-1">
+      &nbsp;
+    </div>
+    <div class="col-10">
+      <app-signinsignup>
+      </app-signinsignup>
+    </div>
+  </div>
+</div>

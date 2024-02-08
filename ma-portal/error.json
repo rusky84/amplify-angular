@@ -1,0 +1,14 @@
+{
+    "name": "PullBackendFault",
+    "classification": "FAULT",
+    "options": {
+        "message": "Failed to pull the backend."
+    },
+    "downstreamException": {
+        "errno": -2,
+        "syscall": "stat",
+        "code": "ENOENT",
+        "path": "/Users/rm/Documents/GitHub/amplify-angular/ma-portal/amplify/.temp/#current-cloud-backend/function/maportalFunctionIONAPI/.venv/bin/python"
+    },
+    "link": "https://docs.amplify.aws/cli/project/troubleshooting/"
+}
